@@ -3,7 +3,7 @@ export const getAreasByMinisterio = async (idMinisterio) => {
     try {
 
         console.log("Get Area By idMinisterio: ",idMinisterio)
-        const response = await fetch(`http://localhost:4000/api/areas?ministerio=${idMinisterio}`,
+        const response = await fetch(`https://formulario-backend-c2v4.onrender.com/api/areas?ministerio=${idMinisterio}`,
             {
                 method: 'GET',
                 headers: {

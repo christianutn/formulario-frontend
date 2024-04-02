@@ -2,7 +2,7 @@
 
 export const getMinisterios = async () => {
     try {
-        const response = await fetch('http://localhost:4000/api/ministerios', {
+        const response = await fetch('https://formulario-backend-c2v4.onrender.com/api/ministerios', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

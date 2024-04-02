@@ -24,7 +24,7 @@ export const ModalBuscarTutor = ({ isOpen, onClose, onSelectTutor }) => {
         const listaTutores = async (cuil, apellido) => {
 
             try {
-                const response = await fetch(`http://localhost:4000/api/tutores?cuil=${cuil}&apellido=${apellido}`, {
+                const response = await fetch(`https://formulario-backend-c2v4.onrender.com/api/tutores?cuil=${cuil}&apellido=${apellido}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

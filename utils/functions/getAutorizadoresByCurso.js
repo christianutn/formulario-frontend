@@ -1,7 +1,7 @@
 export const getAutorizadorByCurso = async (idCurso) => {
     console.log(`http://localhost:4000/api/cursos/${idCurso}`)
     try {
-        const response = await fetch(`http://localhost:4000/api/cursos/${idCurso}`, {
+        const response = await fetch(`https://formulario-backend-c2v4.onrender.com/api/cursos/${idCurso}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

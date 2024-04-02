@@ -1,7 +1,7 @@
 export const crearNuevoCurso = async (nombreCurso, idMinisterio, idAutorizador, idArea) => {
 
     try {
-        const response = await fetch('http://localhost:4000/api/cursos', {
+        const response = await fetch('https://formulario-backend-c2v4.onrender.com/api/cursos', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

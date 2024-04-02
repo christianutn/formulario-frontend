@@ -1,7 +1,7 @@
 export const agregarNuevaInscripcionAExcel = async (inscripcion) => {
 
     try {
-        const response = await fetch('http://localhost:4000/api/googleSheets', {
+        const response = await fetch('https://formulario-backend-c2v4.onrender.com/api/googleSheets', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

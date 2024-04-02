@@ -1,6 +1,6 @@
 export const getInscripcionById = async (idInscripcion) => {
     try {
-        const response = await fetch(`http://localhost:4000/api/inscripciones/${idInscripcion}`, {
+        const response = await fetch(`https://formulario-backend-c2v4.onrender.com/api/inscripciones/${idInscripcion}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

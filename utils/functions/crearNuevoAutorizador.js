@@ -1,7 +1,7 @@
 export const crearNuevoAutorizador = async (nombre, apellido, descripcion) => {
 
     try {
-        const response = await fetch('http://localhost:4000/api/autorizadores', {
+        const response = await fetch('https://formulario-backend-c2v4.onrender.com/api/autorizadores', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -1,7 +1,7 @@
 export const obtenerIdAreaByCod = async (codArea) => {
 
     try {
-        const response = await fetch(`http://localhost:4000/api/areas?cod=${codArea}`, {
+        const response = await fetch(`https://formulario-backend-c2v4.onrender.com/api/areas?cod=${codArea}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

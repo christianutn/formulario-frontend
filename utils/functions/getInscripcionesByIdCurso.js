@@ -3,7 +3,7 @@ export const getInscripcionesByIdCurso = async (idCurso) => {
 
     try {
         console.log("getInscripcionesByIdCurso id del curso: ", idCurso)
-        const response = await fetch(`http://localhost:4000/api/inscripciones?idCurso=${idCurso}`, {
+        const response = await fetch(`https://formulario-backend-c2v4.onrender.com/api/inscripciones?idCurso=${idCurso}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
