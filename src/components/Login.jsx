@@ -27,8 +27,7 @@ export const Login = () => {
             // Obtener el token del almacenamiento local
             const storedToken = localStorage.getItem('token');
 
-            // Mostrar el token en la consola
-            console.log('Token almacenado:', storedToken);
+           
 
             Swal.fire({
                 position: 'center',

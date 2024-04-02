@@ -9,7 +9,7 @@ import { crearNuevaArea } from '../../utils/functions/crearNuevaArea';
 
 export const ModalAgregarArea = ({ isOpen, onClose, ministerios }) => {
 
-   console.log("MINISTERIOS DESDE MODLA: ", ministerios)
+   
 
    const [selectMinisterio, setSelectMinisterio] = useState('sin-seleccionar-ministerio')
    const [isOptionSelecte1, setIsOptionSelecte1] = useState(true)
@@ -18,7 +18,7 @@ export const ModalAgregarArea = ({ isOpen, onClose, ministerios }) => {
        setSelectMinisterio(e.target.value)
        if(e.target.value !== "sin-seleccionar-ministerio"){
            setIsOptionSelecte1(false)
-           console.log("SELECT MINISTERIO: ", e.target.value)
+          
        }else{
            setIsOptionSelecte1(true)
        }

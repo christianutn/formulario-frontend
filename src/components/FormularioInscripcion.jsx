@@ -306,7 +306,7 @@ export const FormularioInscripcion = () => {
     //Manejador de modal para buscar tutores
     const [isOpenModal, setIsOpenModal] = useState(false);
     const handleOpenModal = () => {
-        console.log("Formulario - HandleModalTutor: ", isOpenModal)
+        
         setIsOpenModal(!isOpenModal);
     }
 
@@ -464,8 +464,7 @@ export const FormularioInscripcion = () => {
             const nuevaInscripcionPoblada = await getInscripcionById(nuevaInscripcion._id)
             const res = await agregarNuevaInscripcionAExcel(nuevaInscripcionPoblada);
 
-            console.log(res)
-
+           
             Swal.fire({
                 position: 'center',
                 icon: 'success',
@@ -502,27 +501,27 @@ export const FormularioInscripcion = () => {
             try {
                 const inscripcionesNuevas = await getInscripciones();
 
-                console.log("Formulario - Inscripciones: ", inscripcionesNuevas)
+                
 
                 setInscripciones(inscripcionesNuevas);
 
                 const ministeriosNuevos = await getMinisterios();
                 setMinisterios(ministeriosNuevos);
 
-                console.log("Formulario - Ministerio Nuevo: ", ministeriosNuevos)
+                
 
                 const mediosInscripcion = await getMediosDeInscripcion();
                 setMediosInscripcion(mediosInscripcion);
-                console.log("Formulario - medios de inscripción: ", mediosInscripcion)
+               
 
 
                 const plataformasDictadoNuevo = await getPlataformasDeDictado()
                 setPlataformasDictado(plataformasDictadoNuevo)
-                console.log("Formulario - plataformas de dictado: ", plataformasDictadoNuevo)
+                
 
                 const tiposDeCapacitacionNuevos = await getTiposDeCapacitacion();
                 setTiposCapacitacion(tiposDeCapacitacionNuevos)
-                console.log("Formulario - tipos de capacitación: ", tiposDeCapacitacionNuevos)
+              
 
 
             } catch (error) {
