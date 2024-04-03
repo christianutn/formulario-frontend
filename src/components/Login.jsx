@@ -62,7 +62,7 @@ export const Login = () => {
 
         <div className="container">
             <img
-                src="../../public/img/fondoNegro.jpg"
+                src="../img/fondoNegro.jpg"
                 alt="imagen fondo negro"
                 style={{
                     width: '100%',
