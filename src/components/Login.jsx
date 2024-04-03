@@ -75,7 +75,7 @@ export const Login = () => {
             />
             <div className='login-container' style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
                 <div >
-                    <img src="../public/img/acceso.png" alt="" style={{ width: '140px', height: '140px' }} />
+                    <img src="../img/acceso.png" alt="" style={{ width: '140px', height: '140px' }} />
                 </div>
 
                 <div className="form-group" style={{ marginTop: '40px' }}>

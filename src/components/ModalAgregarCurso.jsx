@@ -162,7 +162,7 @@ export const ModalAgregarCurso = ({ isOpen, onClose, ministerios, abrirDesdeOtro
                 <div style={{ textAlign: 'center', marginTop: '1px' }}>
                     <button
                         style={{
-                            backgroundImage: 'url(../../public/img/atras.png)',
+                            backgroundImage: 'url(../img/atras.png)',
                             height: '50px',
                             width: '50px',
                             backgroundRepeat: 'no-repeat',
@@ -182,7 +182,7 @@ export const ModalAgregarCurso = ({ isOpen, onClose, ministerios, abrirDesdeOtro
                     ></button>
                     <button
                         style={{
-                            backgroundImage: 'url(../../public/img/agregarMinisterio.png)',
+                            backgroundImage: 'url(../img/agregarMinisterio.png)',
                             height: '50px',
                             width: '50px',
                             backgroundRepeat: 'no-repeat',
